@@ -15,18 +15,18 @@
 <body>
 
 <h1>Kebijakan Privasi K-Trog</h1>
-<p class="updated">Terakhir diperbarui: 14 September 2026</p>
+<p class="updated">Terakhir diperbarui: 3 November 2026</p>
 
 <p>K-Trog ("kami") adalah aplikasi super-app yang menyediakan layanan K-Food, K-Fashion, K-Beauty, K-Mart, dan K-Ride. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda.</p>
 
 <h2>1. Data yang Kami Kumpulkan</h2>
 <ul>
   <li><b>Data identitas:</b> nama lengkap, nomor HP, alamat email</li>
-  <li><b>Data verifikasi (KYC):</b> foto KTP dan foto selfie, digunakan untuk verifikasi identitas sebelum akun dapat bertransaksi</li>
+  <li><b>Data verifikasi (KYC):</b> foto KTP dan foto selfie, digunakan untuk verifikasi identitas sebelum akun dapat bertransaksi. Untuk mitra driver juga foto Kartu Keluarga (KK), SIM, dan nomor plat kendaraan; untuk mitra merchant juga alamat toko</li>
   <li><b>Data lokasi:</b> titik GPS (lintang/bujur) untuk keperluan pengantaran pesanan dan pelacakan driver secara real-time</li>
   <li><b>Data transaksi:</b> riwayat pesanan, riwayat pembayaran, saldo dan mutasi dompet (wallet)</li>
   <li><b>Data komunikasi:</b> isi chat antara customer, driver, dan merchant di dalam aplikasi</li>
-  <li><b>Data perangkat:</b> token notifikasi push (Firebase) untuk mengirim pemberitahuan pesanan</li>
+  <li><b>Data perangkat:</b> ID perangkat (untuk membatasi penyalahgunaan promo) dan token notifikasi push (Firebase) untuk mengirim pemberitahuan pesanan</li>
 </ul>
 
 <h2>2. Bagaimana Kami Menggunakan Data</h2>
@@ -44,6 +44,7 @@
 <ul>
   <li><b>Driver:</b> nama, lokasi tujuan, dan nomor HP customer saat pesanan diproses (untuk keperluan pengantaran)</li>
   <li><b>Merchant (toko):</b> nama dan detail pesanan customer</li>
+  <li><b>Penyedia layanan:</b> Midtrans (pembayaran), Firebase/Google (notifikasi dan login Google), Cloudinary (penyimpanan foto), Amazon Web Services (verifikasi wajah driver), dan layanan email (pengiriman kode OTP). Kami hanya membagikan data yang dibutuhkan untuk fungsi tersebut</li>
   <li>Kami <b>tidak menjual</b> data pribadi Anda kepada pihak ketiga untuk tujuan pemasaran</li>
 </ul>
 
@@ -52,11 +53,12 @@
   <li>Kata sandi disimpan dalam bentuk hash (bcrypt), tidak pernah disimpan dalam bentuk teks biasa</li>
   <li>PIN transaksi 6-digit diperlukan untuk pembayaran dari dompet, disimpan dalam bentuk hash</li>
   <li>Akun otomatis terkunci sementara setelah beberapa kali percobaan login yang gagal</li>
+  <li>Komunikasi aplikasi dengan server memakai koneksi terenkripsi (HTTPS)</li>
 </ul>
 
 <h2>5. Hak Pengguna</h2>
 <ul>
-  <li>Anda dapat meminta penghapusan akun dan data pribadi Anda dengan menghubungi kami di kontak di bawah</li>
+  <li>Anda dapat menghapus akun lewat menu Hapus Akun di aplikasi (syarat: saldo kosong dan tidak ada komplain yang berjalan), atau dengan menghubungi kami di kontak di bawah. Data pribadi (nama, kontak, KTP, dan foto) dihapus atau disamarkan, sedangkan catatan transaksi tetap disimpan tanpa identitas untuk keperluan pembukuan dan hukum</li>
   <li>Anda dapat memperbarui data profil kapan saja melalui halaman Profil di aplikasi</li>
 </ul>
 
@@ -75,7 +77,7 @@
 <hr style="margin-top:48px;">
 
 <h1>Syarat & Ketentuan K-Trog</h1>
-<p class="updated">Terakhir diperbarui: 14 September 2026</p>
+<p class="updated">Terakhir diperbarui: 3 November 2026</p>
 
 <h2>1. Penerimaan Syarat</h2>
 <p>Dengan menggunakan aplikasi K-Trog, Anda menyetujui Syarat & Ketentuan ini beserta Kebijakan Privasi di atas.</p>
@@ -89,15 +91,16 @@
 
 <h2>3. Transaksi & Pembayaran</h2>
 <ul>
-  <li>Pembayaran dapat dilakukan melalui saldo dompet (Wallet) atau Bayar di Tempat (COD)</li>
+  <li>Pembayaran dapat dilakukan melalui saldo dompet (Wallet), QRIS, atau Bayar di Tempat (COD)</li>
   <li>Biaya admin dan biaya layanan COD (jika berlaku) ditampilkan secara transparan sebelum pembayaran dikonfirmasi</li>
   <li>Dana yang telah dibayarkan untuk pesanan yang sedang diproses tidak dapat ditarik hingga pesanan selesai atau dibatalkan sesuai kebijakan pembatalan</li>
 </ul>
 
 <h2>4. Kebijakan Pembatalan & Refund</h2>
 <ul>
-  <li>Pembatalan pesanan sebelum diproses driver/merchant akan direfund penuh ke Wallet</li>
+  <li>Pembatalan pesanan sebelum diproses driver/merchant akan direfund penuh ke Wallet K-Trog (saldo dapat dipakai untuk pesanan berikutnya)</li>
   <li>Komplain terkait pesanan dapat diajukan melalui menu Komplain di halaman detail pesanan, akan ditinjau oleh admin</li>
+  <li>Barang yang tidak sesuai, rusak, atau salah kirim karena kesalahan merchant atau pengirim direfund penuh, dengan ongkir ditanggung pihak yang bersalah. Pengajuan wajib disertai foto dan video unboxing dan diperiksa admin berdasarkan bukti dari semua pihak. Kesalahan dari pelanggan tidak mendapat refund</li>
 </ul>
 
 <h2>5. Kewajiban Driver & Merchant</h2>
