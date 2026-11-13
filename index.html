@@ -15,7 +15,7 @@
 <body>
 
 <h1>Kebijakan Privasi K-Trog</h1>
-<p class="updated">Terakhir diperbarui: 4 November 2026</p>
+<p class="updated">Terakhir diperbarui: 13 November 2026</p>
 
 <p>K-Trog ("kami") adalah aplikasi super-app yang menyediakan layanan K-Food, K-Fashion, K-Beauty, K-Mart, dan K-Ride. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda.</p>
 
@@ -24,14 +24,14 @@
   <li><b>Data identitas:</b> nama lengkap, nomor HP, alamat email</li>
   <li><b>Data verifikasi (KYC):</b> foto KTP dan foto selfie, digunakan untuk verifikasi identitas sebelum akun dapat bertransaksi. Untuk mitra driver juga foto Kartu Keluarga (KK), SIM, dan nomor plat kendaraan; untuk mitra merchant juga alamat toko</li>
   <li><b>Data lokasi:</b> titik GPS (lintang/bujur) untuk keperluan pengantaran pesanan dan pelacakan driver secara real-time</li>
-  <li><b>Data transaksi:</b> riwayat pesanan, riwayat pembayaran, saldo dan mutasi dompet (wallet)</li>
+  <li><b>Data transaksi:</b> riwayat pesanan, metode pembayaran (Bayar di Tempat/COD), serta catatan setoran dan denda untuk mitra driver</li>
   <li><b>Data komunikasi:</b> isi chat antara customer, driver, dan merchant di dalam aplikasi</li>
   <li><b>Data perangkat:</b> ID perangkat (untuk membatasi penyalahgunaan promo) dan token notifikasi push (Firebase) untuk mengirim pemberitahuan pesanan</li>
 </ul>
 
 <h2>2. Bagaimana Kami Menggunakan Data</h2>
 <ul>
-  <li>Memproses pesanan, pembayaran, dan pengantaran</li>
+  <li>Memproses pesanan dan pengantaran</li>
   <li>Verifikasi identitas untuk mencegah penipuan (KYC)</li>
   <li>Menampilkan lokasi driver secara real-time kepada customer selama pesanan aktif</li>
   <li>Mengirim notifikasi terkait status pesanan, promo, atau pengumuman penting</li>
@@ -44,26 +44,27 @@
 <ul>
   <li><b>Driver:</b> nama, lokasi tujuan, dan nomor HP customer saat pesanan diproses (untuk keperluan pengantaran)</li>
   <li><b>Merchant (toko):</b> nama dan detail pesanan customer</li>
-  <li><b>Penyedia layanan:</b> Midtrans (pembayaran), Firebase/Google (notifikasi dan login Google), Cloudinary (penyimpanan foto), Amazon Web Services (verifikasi wajah driver), dan layanan email (pengiriman kode OTP). Kami hanya membagikan data yang dibutuhkan untuk fungsi tersebut</li>
+  <li><b>Penyedia layanan:</b> Firebase/Google (notifikasi dan login Google), Cloudinary (penyimpanan foto), Amazon Web Services (verifikasi wajah driver), dan layanan email (pengiriman kode OTP). Kami hanya membagikan data yang dibutuhkan untuk fungsi tersebut</li>
   <li>Kami <b>tidak menjual</b> data pribadi Anda kepada pihak ketiga untuk tujuan pemasaran</li>
 </ul>
 
 <h2>4. Keamanan Data</h2>
 <ul>
   <li>Kata sandi disimpan dalam bentuk hash (bcrypt), tidak pernah disimpan dalam bentuk teks biasa</li>
-  <li>PIN transaksi 6-digit diperlukan untuk pembayaran dari dompet, disimpan dalam bentuk hash</li>
   <li>Akun otomatis terkunci sementara setelah beberapa kali percobaan login yang gagal</li>
   <li>Komunikasi aplikasi dengan server memakai koneksi terenkripsi (HTTPS)</li>
+  <li>Foto KYC dan dokumen serah terima disimpan di penyimpanan privat yang tidak dapat diakses publik</li>
+  <li>Tidak ada sistem yang sepenuhnya kebal, jadi jaga kerahasiaan kata sandi dan kode OTP Anda</li>
 </ul>
 
 <h2>5. Hak Pengguna</h2>
 <ul>
-  <li>Anda dapat menghapus akun lewat menu Hapus Akun di aplikasi (syarat: saldo kosong dan tidak ada komplain yang berjalan), atau dengan menghubungi kami di kontak di bawah. Data pribadi (nama, kontak, KTP, dan foto) dihapus atau disamarkan, sedangkan catatan transaksi tetap disimpan tanpa identitas untuk keperluan pembukuan dan hukum</li>
+  <li>Anda dapat menghapus akun lewat menu Hapus Akun di aplikasi, atau dengan mengikuti petunjuk di <a href="hapus-akun.html">halaman Hapus Akun</a>. Syarat: tidak ada pesanan atau komplain yang sedang berjalan; untuk mitra driver, tidak ada setoran atau denda yang belum diselesaikan. Data pribadi (nama, kontak, KTP, dan foto) dihapus atau disamarkan, sedangkan catatan transaksi tetap disimpan tanpa identitas untuk keperluan pembukuan dan hukum</li>
   <li>Anda dapat memperbarui data profil kapan saja melalui halaman Profil di aplikasi</li>
 </ul>
 
 <h2>6. Penyimpanan Data</h2>
-<p>Data disimpan selama akun Anda aktif. Data transaksi dapat disimpan lebih lama untuk keperluan audit dan kewajiban hukum.</p>
+<p>Data disimpan selama akun Anda aktif. Setelah akun dihapus, data pribadi dihapus atau disamarkan sebagaimana dijelaskan di halaman Hapus Akun. Data transaksi dapat disimpan lebih lama tanpa identitas untuk keperluan audit dan kewajiban hukum.</p>
 
 <h2>7. Anak di Bawah Umur</h2>
 <p>Layanan ini ditujukan untuk pengguna berusia 18 tahun ke atas atau yang telah memiliki kapasitas hukum untuk bertransaksi.</p>
@@ -77,23 +78,23 @@
 <hr style="margin-top:48px;">
 
 <h1>Syarat & Ketentuan K-Trog</h1>
-<p class="updated">Terakhir diperbarui: 4 November 2026</p>
+<p class="updated">Terakhir diperbarui: 13 November 2026</p>
 
 <h2>1. Penerimaan Syarat</h2>
 <p>Dengan menggunakan aplikasi K-Trog, Anda menyetujui Syarat & Ketentuan ini beserta Kebijakan Privasi di atas.</p>
 
 <h2>2. Akun Pengguna</h2>
 <ul>
-  <li>Anda bertanggung jawab menjaga kerahasiaan kata sandi dan PIN transaksi Anda</li>
+  <li>Anda bertanggung jawab menjaga kerahasiaan kata sandi dan kode OTP Anda</li>
   <li>Verifikasi KYC (KTP + selfie) wajib diselesaikan sebelum dapat melakukan transaksi</li>
   <li>Satu nomor HP hanya dapat digunakan untuk satu akun</li>
 </ul>
 
 <h2>3. Transaksi & Pembayaran</h2>
 <ul>
-  <li>Pembayaran dilakukan sesuai metode yang tersedia saat checkout (saat ini Bayar di Tempat/COD)</li>
-  <li>Biaya admin dan biaya layanan COD (jika berlaku) ditampilkan secara transparan sebelum pembayaran dikonfirmasi</li>
-  <li>Dana yang telah dibayarkan untuk pesanan yang sedang diproses tidak dapat ditarik hingga pesanan selesai atau dibatalkan sesuai kebijakan pembatalan</li>
+  <li>Pembayaran saat ini dilakukan dengan Bayar di Tempat (COD), langsung kepada driver saat pesanan diterima</li>
+  <li>Biaya admin, ongkir, dan biaya layanan COD (jika berlaku) ditampilkan secara transparan sebelum pesanan dikonfirmasi</li>
+  <li>Mitra driver wajib menyetorkan dana COD sesuai ketentuan setoran yang berlaku. Keterlambatan setoran dapat dikenakan denda dan berakibat pembatasan akun</li>
 </ul>
 
 <h2>4. Kebijakan Pembatalan & Refund</h2>
